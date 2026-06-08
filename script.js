@@ -20,7 +20,7 @@
     }
 //função mudança de estilo:
     function mde(){
-        var hj=new Date();
+        var hj=6//new Date();
         var hr=hj.getHours();
         if(hr>=18){
         var corpo= document.querySelector('body')

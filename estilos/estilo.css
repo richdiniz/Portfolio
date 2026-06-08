@@ -8,7 +8,7 @@
 --cor6:#00ba79;
 }
     
-    
+/*Configuração global*/    
 *{margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -134,14 +134,26 @@
         background: var(--cor6);
     }
 
+    #conttlist{
+        list-style-type: none;
+        display: flex;
+        gap: 20px;
+    }
+    .conttIcon{
+        width: 60px;
+    }
+
     footer {
         text-align: center;
         padding: 20px;
-        background:var(--cor4);
+        background:var(--cor1);
         margin-top: 40px;
         font-size: 14px;
-        opacity: 0.2;
+        /*opacity: 0.2;*/
         }
+    footer >p{
+        color:var(--cor2);
+    }
 /*para ocultar os projetos */
         .oculto {
             display: none;
