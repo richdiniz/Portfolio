@@ -64,6 +64,12 @@
         max-width: 1100px;
         margin: auto;
     }
+
+    #fotoHorario{
+        width:500px;
+        padding: 0px;
+    }
+
     .apresentacao{
         text-align: center;
     }
@@ -92,6 +98,12 @@
     }
     .habilidade:hover{
         transform: translateY(-7px);
+    }
+
+    #contato{
+        padding: 40px 12px;
+        max-width: 1100px;
+        margin: auto;
     }
 
     .projetos-container{
@@ -140,18 +152,35 @@
         gap: 20px;
     }
     .conttIcon{
-        width: 60px;
+        width: 48px;
+        opacity: 0.85;
+    }
+    .conttIcon:hover{
+        opacity: 1;
+        transform: scale(1.09);
+    }
+    #l1:hover{
+        border-radius: 8.5px;
+        box-shadow: #00ffa6 0 0 11px;
+    }
+    #l2:hover{
+        border-radius: 27px;
+        box-shadow: #00ffa6 0 1.5px 18px;
+    }
+    #l3:hover{
+        border-radius: 15px;
+        box-shadow: #00ffa6 0 0 14px;
     }
 
     footer {
         text-align: center;
         padding: 20px;
-        background:var(--cor1);
+        background:linear-gradient(var(--cor1,), var(--cor3));
         margin-top: 40px;
         font-size: 14px;
-        /*opacity: 0.2;*/
-        }
-    footer >p{
+        color: rgb(255, 255, 255);
+    }
+    footer p{
         color:var(--cor2);
     }
 /*para ocultar os projetos */

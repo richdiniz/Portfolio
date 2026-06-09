@@ -9,7 +9,7 @@
     function msg(){
         var msg= window.document.getElementById('msg');
         var data= new Date();
-        var hora= data.getHours();
+        var hora=data.getHours();
         if(hora>=6 && hora<12){
             msg.innerHTML+='Olá, Bom dia. Eu sou Desenvolvedor Frontend';
         }else if(hora>=12 && hora<18){
@@ -20,7 +20,7 @@
     }
 //função mudança de estilo:
     function mde(){
-        var hj=6//new Date();
+        var hj=new Date();
         var hr=hj.getHours();
         if(hr>=18){
         var corpo= document.querySelector('body')
@@ -28,9 +28,25 @@
         corpo.style.color = "#E0E0E0"
         }
     }
+//função mudança da foto:    
+    function imagemSaudacao(){
+        const foto= document.getElementById("fotoHorario");
+
+        var hoje= new Date();
+        var hora=hoje.getHours();
+
+        if(hora>=6 && hora<12){
+            foto.src="imagens/dia.webp";
+        }else if(hora>=12 && hora<18){
+            foto.src="imagens/tarde.webp";
+        }else if(hora>=18){
+            foto.src="imagens/noite.webp";
+        }
+    }
 
 // mensagem+estilo+
     function carregar(){
         msg();
         mde();
+        imagemSaudacao();
     }
