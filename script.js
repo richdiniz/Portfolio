@@ -4,7 +4,7 @@
         lista.classList.toggle("oculto");
     }
 var hj= new Date();
-var hora=hj.getHours(); 
+var hora=18//hj.getHours(); 
 
 //função mensagem de saudação:
     function msg(){
@@ -22,6 +22,7 @@ var hora=hj.getHours();
 //função mudança de estilo:
     function mde(){
         var corpo= document.querySelector('body')
+
         if(hora>=6 && hora<12){
             corpo.style.backgroundImage="linear-gradient(to bottom,var(--cor8p), white, white)"
         }
@@ -47,7 +48,7 @@ var hora=hj.getHours();
         }
     }
 
-// mensagem+estilo+foto
+// Exebindo resultado Final: mensagem+estilo+foto
     function carregar(){
         msg();
         mde();
