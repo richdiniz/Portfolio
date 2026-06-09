@@ -4,7 +4,7 @@
         lista.classList.toggle("oculto");
     }
 var hj= new Date();
-var hora=18//hj.getHours(); 
+var hora=hj.getHours(); 
 
 //função mensagem de saudação:
     function msg(){
