@@ -54,3 +54,4 @@ var hora=hj.getHours();
         mde();
         imagemSaudacao();
     }
+    
