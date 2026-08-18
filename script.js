@@ -51,7 +51,7 @@ var hora=hj.getHours();
 // Exebindo resultado Final: mensagem+estilo+foto
     function carregar(){
         msg();
-        //mde();
+        mde();
         imagemSaudacao();
     }
     
